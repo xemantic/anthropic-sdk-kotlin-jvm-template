@@ -27,7 +27,7 @@ Will create
 Which you can execute directly with:
 
 ```shell
-java -jar anthropic-sdk-kotlin-jvm-template-0.1-SNAPSHOT-fat.jar
+java -jar build/libs/anthropic-sdk-kotlin-jvm-template-0.1-SNAPSHOT-fat.jar
 ```
 
 Follow `TODO` comments in the sourcecode for adjustments. Don't forget about changes to: 
