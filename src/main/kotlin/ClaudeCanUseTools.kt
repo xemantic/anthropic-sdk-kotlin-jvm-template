@@ -6,15 +6,14 @@ import com.xemantic.anthropic.message.Message
 import com.xemantic.anthropic.message.ToolResult
 import com.xemantic.anthropic.message.ToolUse
 import com.xemantic.anthropic.message.plusAssign
+import com.xemantic.anthropic.schema.Description
 import com.xemantic.anthropic.tool.AnthropicTool
 import com.xemantic.anthropic.tool.UsableTool
 import kotlinx.coroutines.runBlocking
 
 // TODO develop your own tool
-@AnthropicTool(
-  name = "get_weather",
-  description = "Get the weather for a specific location"
-)
+@AnthropicTool("get_weather")
+@Description("Get the weather for a specific location")
 data class WeatherTool(
   val location: String
 ): UsableTool {
